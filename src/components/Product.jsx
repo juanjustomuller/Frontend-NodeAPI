@@ -16,7 +16,7 @@ const Product = ({product, getProducts}) => {
     });
     if(result.isConfirmed){
       try {
-        await axios.delete(`http://localhost:3000/api/products/${id}`);
+        await axios.delete(`https://nodeapi-c76h.onrender.com/api/products/${id}`);
         toast.success("Producto borrado con exito!")
         getProducts();
       } catch (error) {

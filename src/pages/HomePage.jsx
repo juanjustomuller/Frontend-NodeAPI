@@ -10,7 +10,7 @@ const HomePage = () => {
     const getProducts = async () => {
         try {
             setIsLoading(true)
-            const response = await axios.get("http://localhost:3000/api/products")
+            const response = await axios.get("https://nodeapi-c76h.onrender.com/api/products")
             console.log("La info de los productos", response.data);
             setProducts(response.data)
             setIsLoading(false)

@@ -19,7 +19,7 @@ const CreatePage = () => {
     }
     try {
       setIsLoading(true);
-      const response = await axios.post("http://localhost:3000/api/products", {name: name, quantity:quantity, price:price, image:image });
+      const response = await axios.post("https://nodeapi-c76h.onrender.com/api/products", {name: name, quantity:quantity, price:price, image:image });
       //alert(`Save ${response.data.name} successfully`);
       toast.success(`Save ${response.data.name} successfully`)
       setIsLoading(false);
